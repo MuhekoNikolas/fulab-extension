@@ -1,3 +1,115 @@
 body{
   background:red;
 }
+
+Fulab 2.0   Editor API Ressurser Mitt fag Skolebibliotek Kalkulator Om
+/* Style the tab's menubar - button background*/
+* {
+  box-sizing: border-box;
+  font-size:14px;
+}
+.extensionNavBar {
+  border: 1px solid #ccc;
+  background-color:  #f1f1f1;
+  margin-top: 1px;
+  position: sticky; /*relative */
+  overflow:auto;
+  white-space: nowrap;
+}
+/* Style the buttons that are used to open the tab content */
+.extensionNavBar button {
+  background-color: inherit;
+  /*float: left; Ã˜delegger for horisontal scrolling ?????? */
+  border: none;
+  outline: none;
+  height: 30px;
+  cursor: pointer;
+  padding: 2px 2px 2px 2px;
+  transition: 0.1s;
+  
+  /*display: inline-block;*/
+  margin-top: 0px;
+
+}
+.extensionNavBar img {
+  border: none;
+  outline: none;
+  height: 22px;
+  cursor: pointer;
+  padding: 2px 2px 2px 2px;
+  transition: 0.1s;
+  margin-top: 8px;
+}
+/* Change background color of buttons on hover */
+.extensionNavBar button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.extensionNavBar button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content - iFrames*/
+.tabcontent {
+  display: none;
+  padding: 4px 1px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.logo{
+  color: green;
+  font-size:12px;
+  font-weight: bold;
+  background-color: olive;
+  padding: 0px 0px;
+}
+.btnIcon{
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+.btnIcon2{
+	height: 35px;
+	width: 35px;
+	padding: 0px;
+	margin: 1px;
+	font-size: 20px;
+}
+
+
+
+/* Create columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: left;
+  width: 90%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbutton{ /* Knappene pÃ¥ venstre side  i Guide og Skolebibliotek */
+  background-color: #ddd;
+  margin: 1px;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+}
